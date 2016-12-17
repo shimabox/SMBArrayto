@@ -1,0 +1,8 @@
+.DS_Store
+vendor/
+composer.lock
+tests/_files/plugins/json/actual/*
+tests/_files/plugins/csv/actual/*
+tests/_files/plugins/tsv/actual/*
+tests/_files/plugins/ltsv/actual/*
+tests/_files/plugins/xml/actual/*
