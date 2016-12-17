@@ -1,0 +1,24 @@
+[
+    {
+        "key1": null,
+        "key2": true,
+        "key3": 0
+    },
+    {
+        "url": "http://example.net"
+    },
+    {
+        "arr": {
+            "foo": "bar"
+        }
+    },
+    {
+        "obj": {
+            "hoge": "123",
+            "piyo": {
+                "abc": null,
+                "def": false
+            }
+        }
+    }
+]

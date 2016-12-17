@@ -1,0 +1,30 @@
+{
+    "url": [
+        "http://example.net",
+        "http://example.org"
+    ],
+    "arr": [
+        {
+            "foo": "bar"
+        },
+        {
+            "baz": "fuga"
+        }
+    ],
+    "obj": [
+        {
+            "hoge": "123",
+            "piyo": {
+                "abc": null,
+                "def": false
+            }
+        },
+        {
+            "hoge": "456",
+            "piyo": {
+                "ghi": null,
+                "jkl": false
+            }
+        }
+    ]
+}

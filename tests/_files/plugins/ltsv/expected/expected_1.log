@@ -1,0 +1,1 @@
+time:[2017-01-01 08:59:60]	foo:NULL	bar:true	buz:0	url:http://example.net	arr:{"foo":"bar"}	obj:[object] (stdClass: {"hoge":123,"piyo":{"abc":null,"def":false}})
