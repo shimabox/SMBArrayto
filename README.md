@@ -1,5 +1,8 @@
 # SMBArrayto
 [![Build Status](https://travis-ci.org/shimabox/SMBArrayto.svg?branch=master)](https://travis-ci.org/shimabox/SMBArrayto)
+[![License](https://poser.pugx.org/shimabox/smbarrayto/license)](https://packagist.org/packages/shimabox/smbarrayto)
+[![Latest Stable Version](https://poser.pugx.org/shimabox/smbarrayto/v/stable)](https://packagist.org/packages/shimabox/smbarrayto)
+[![Latest Unstable Version](https://poser.pugx.org/shimabox/smbarrayto/v/unstable)](https://packagist.org/packages/shimabox/smbarrayto)
 
 Array to csv, tsv, ltsv, xml, json, ...
 
