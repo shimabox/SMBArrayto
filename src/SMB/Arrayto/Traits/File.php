@@ -20,37 +20,40 @@ trait File
      * @var int
      */
     protected $permission = 666;
-    
+
     /**
      * file name
      * @var string
      */
     private $fileName = '';
-    
+
     /**
      * Setter of the file name
      * @param string
      * @return this
      */
-    public function setFileName($fileName) {
+    public function setFileName($fileName)
+    {
         $this->fileName = $fileName;
         return $this;
     }
-    
+
     /**
      * Getter of the file name
      * @return string
      */
-    public function getFileName() {
+    public function getFileName()
+    {
         return $this->fileName;
     }
-    
+
     /**
      * Setter of the open mode
      * @param string
      * @return this
      */
-    public function setOpenMode($mode) {
+    public function setOpenMode($mode)
+    {
         $this->openMode = $mode;
         return $this;
     }
