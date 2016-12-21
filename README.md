@@ -109,11 +109,12 @@ pineapple,パインアップル,800
 
 - Use basically the following three interfaces
   - ```download($fileName);```
-    - It does not create the actual file
+    - It does not create the actual file　(csv, tsv)
       - It makes use of the temporary file
     - Use the header function
   - ```output();```
-    - It does not create a temporary file
+    - It does not create the actual file　(csv, tsv)
+      - It makes use of the temporary file
     - Use the header function
     - Simply echo()
   - ```write();```
