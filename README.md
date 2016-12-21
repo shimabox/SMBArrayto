@@ -28,7 +28,8 @@ composer require shimabox/smbarrayto
 
 ### In the case of csv download
 
-- It does not create a temporary file
+- It does not create the actual file
+  - It makes use of the temporary file
 - Use the header function
 
 ```php
@@ -108,7 +109,8 @@ pineapple,パインアップル,800
 
 - Use basically the following three interfaces
   - ```download($fileName);```
-    - It does not create a temporary file
+    - It does not create the actual file
+      - It makes use of the temporary file
     - Use the header function
   - ```output();```
     - It does not create a temporary file
