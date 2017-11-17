@@ -12,4 +12,9 @@
     <testsuite name="Test Suite">
         <directory>./tests/</directory>
     </testsuite>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">./src/</directory>
+        </whitelist>
+    </filter>
 </phpunit>
