@@ -1,6 +1,8 @@
 # SMBArrayto
-[![Build Status](https://travis-ci.org/shimabox/SMBArrayto.svg?branch=master)](https://travis-ci.org/shimabox/SMBArrayto)
 [![License](https://poser.pugx.org/shimabox/smbarrayto/license)](https://packagist.org/packages/shimabox/smbarrayto)
+[![Build Status](https://travis-ci.org/shimabox/SMBArrayto.svg?branch=master)](https://travis-ci.org/shimabox/SMBArrayto)
+[![Maintainability](https://api.codeclimate.com/v1/badges/f9303def15fbfc74d3f5/maintainability)](https://codeclimate.com/github/shimabox/SMBArrayto/maintainability)
+[![Coverage Status](https://coveralls.io/repos/github/shimabox/SMBArrayto/badge.svg?branch=master)](https://coveralls.io/github/shimabox/SMBArrayto?branch=master)
 [![Latest Stable Version](https://poser.pugx.org/shimabox/smbarrayto/v/stable)](https://packagist.org/packages/shimabox/smbarrayto)
 [![Latest Unstable Version](https://poser.pugx.org/shimabox/smbarrayto/v/unstable)](https://packagist.org/packages/shimabox/smbarrayto)
 
