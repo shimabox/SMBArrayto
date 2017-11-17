@@ -25,4 +25,5 @@ script:
   - vendor/bin/phpunit --coverage-clover build/logs/coverage-clover.xml
 
 after_success:
-  - travis_retry php vendor/bin/coveralls -v
+  - vendor/bin/test-reporter --coverage-report build/logs/coverage-clover.xml
+  - vendor/bin/coveralls -v
