@@ -23,3 +23,6 @@ before_script:
 script:
   - mkdir -p build/logs
   - vendor/bin/phpunit --coverage-clover build/logs/coverage-clover.xml
+
+after_success:
+  - travis_retry php vendor/bin/coveralls -v
