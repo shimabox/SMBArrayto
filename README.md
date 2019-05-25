@@ -417,8 +417,8 @@ $xmlWriter->setRows($xmlRows)
   ```
   **Result**
   ```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<bookstore><book category="children" currency="USD"><tilte lang="en">Harry Potter</tilte><author>J K. Rowling</author><year>2005</year><price>29.99</price></book><book category="music" currency="JPY"><tilte lang="ja">[score] Boys&amp;Gilrs</tilte><author>GOING STEADY(銀杏BOYZ)</author><year>2000</year><price>2,808</price></book></bookstore>
+  <?xml version="1.0" encoding="UTF-8"?>
+  <bookstore><book category="children" currency="USD"><tilte lang="en">Harry Potter</tilte><author>J K. Rowling</author><year>2005</year><price>29.99</price></book><book category="music" currency="JPY"><tilte lang="ja">[score] Boys&amp;Gilrs</tilte><author>GOING STEADY(銀杏BOYZ)</author><year>2000</year><price>2,808</price></book></bookstore>
   ```
 
 ### In the case of Json
