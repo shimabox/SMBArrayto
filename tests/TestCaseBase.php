@@ -1,12 +1,12 @@
 <?php
-abstract class TestCaseBase extends \PHPUnit_Framework_TestCase
+abstract class TestCaseBase extends \PHPUnit\Framework\TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
         parent::tearDown();
     }

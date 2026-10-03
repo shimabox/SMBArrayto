@@ -1,0 +1,39 @@
+name: Tests
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  phpunit:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php: ['7.2', '7.4']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          tools: composer:2.2
+          coverage: xdebug
+          extensions: bcmath, curl, dom, mbstring, xml, xmlwriter, zip
+      - run: composer install --no-interaction --prefer-dist --no-plugins
+      - run: vendor/bin/phpunit --coverage-clover build/coverage.xml
+      - uses: actions/upload-artifact@v4
+        with:
+          name: coverage-php-${{ matrix.php }}
+          path: build/coverage.xml
+  security-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+          tools: composer:2.2
+          extensions: bcmath, curl, dom, mbstring, xml, xmlwriter, zip
+          coverage: none
+      - run: composer install --no-interaction --prefer-dist --no-plugins
+      - run: composer self-update --2
+      - run: composer audit --locked

@@ -29,7 +29,7 @@ class ArraytoTest extends \TestCaseBase
      */
     public function it_throws_an_exception_when_a_not_exist_class_name_is_specified()
     {
-        $this->setExpectedException('\InvalidArgumentException');
+        $this->expectException('\InvalidArgumentException');
         Arrayto::factory('jsoooon');
     }
 }

@@ -881,3 +881,8 @@ vendor/bin/phpunit
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE) for more information.
+
+
+## 開発時の検証とカバレッジ
+
+開発テストは PHP 7.2 以上と PHPUnit 8.5 を使用します。ライブラリ本体の PHP バージョン要件は変更していません。GitHub Actions でテストと依存のセキュリティ監査を実行し、Xdebug で生成した Clover カバレッジを `coverage-php-<PHPバージョン>` アーティファクトとして保存します。CodeClimate への外部送信は終了しています。
