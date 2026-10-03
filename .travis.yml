@@ -7,10 +7,6 @@ matrix:
     - php: 7.3
       env: PHP_VERSION="7.3"
 
-addons:
-  code_climate:
-    repo_token: 89381e22acbd73c8e57e329eaadc7ee022d611897ede8d0c0032500f237cf28a
-
 before_script:
   - travis_retry composer install
 
@@ -19,6 +15,3 @@ script:
   - if [ `echo "$PHP_VERSION < 7.3" | bc` == 1 ]; then vendor/bin/phpunit --coverage-clover build/logs/coverage-clover.xml; fi
   - if [ `echo "$PHP_VERSION >= 7.3" | bc` == 1 ]; then phpdbg -qrr vendor/bin/phpunit --coverage-clover build/logs/coverage-clover.xml; fi
 
-after_success:
-  - vendor/bin/test-reporter --coverage-report build/logs/coverage-clover.xml
-  - vendor/bin/coveralls -v
