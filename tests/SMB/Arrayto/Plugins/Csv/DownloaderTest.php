@@ -21,7 +21,7 @@ class DownloaderTest extends \TestCaseBase
     /** @var string */
     protected $expectedFilePath = '';
 
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
 
@@ -31,7 +31,7 @@ class DownloaderTest extends \TestCaseBase
         $this->expectedFilePath = FIXTURE_FILE_PATH . '/plugins/csv/expected/';
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
         parent::tearDown();
 

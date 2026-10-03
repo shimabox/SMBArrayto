@@ -1,0 +1,22 @@
+name: Tests
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  phpunit:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php: ['7.2', '7.4']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          tools: composer:2.2
+          coverage: none
+          extensions: bcmath, curl, dom, mbstring, xml, xmlwriter, zip
+      - run: composer install --no-interaction --prefer-dist --no-plugins
+      - run: vendor/bin/phpunit

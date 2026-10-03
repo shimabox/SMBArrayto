@@ -21,7 +21,7 @@ class WriterTest extends \TestCaseBase
     /** @var string */
     protected $expectedFilePath = '';
 
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
 
@@ -31,7 +31,7 @@ class WriterTest extends \TestCaseBase
         $this->expectedFilePath = FIXTURE_FILE_PATH . '/plugins/json/expected/';
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
         parent::tearDown();
 
